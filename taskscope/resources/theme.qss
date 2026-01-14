@@ -1,0 +1,72 @@
+/* TaskScope - Darker Teal (No selection highlight) */
+
+QMainWindow, QWidget {
+    background: #CFE3DD;        /* biraz daha koyu */
+    color: #0F1E19;
+    font-size: 14px;
+    font-family: "Segoe UI";
+}
+
+QLineEdit, QComboBox {
+    background: #FFFFFF;
+    border: 1px solid #86CDB9;
+    border-radius: 14px;
+    padding: 10px 12px;
+}
+
+QLineEdit:focus, QComboBox:focus {
+    border: 1px solid #1F9A79;
+}
+
+/* Top Buttons */
+QPushButton {
+    background: #3CAF8B;
+    border: 1px solid #1F9A79;
+    border-radius: 16px;
+    padding: 10px 14px;
+    font-weight: 700;
+    color: #0C1613;
+}
+
+QPushButton:hover {
+    background: #2FA57F;
+    border: 1px solid #178B6D;
+}
+
+QPushButton:pressed {
+    background: #1F9A79;
+    border: 1px solid #168868;
+}
+
+QPushButton:disabled {
+    background: #A8CBC2;
+    border: 1px solid #86CDB9;
+    color: #546863;
+}
+
+/* List container */
+QListWidget {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+/* ✅ seçili itemın yeşil şeridi/çizgisi tamamen kapalı */
+QListWidget::item:selected { background: transparent; }
+QListWidget::item:hover { background: transparent;
+}
+
+/* Scrollbar */
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    margin: 10px 6px 10px 6px;
+}
+QScrollBar::handle:vertical {
+    background: #86CDB9;
+    border-radius: 5px;
+    min-height: 30px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
